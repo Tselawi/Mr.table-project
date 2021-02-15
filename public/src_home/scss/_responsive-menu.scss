@@ -1,0 +1,114 @@
+@import "variables";
+
+
+@media (min-width:100px) and (max-width:424px){
+    //hamburger menu for mobile small medium large
+    .logo{
+        margin-top: 20px;
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: $black;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        left: 7%;
+        top: 110%;
+        transform: translate(-20%, -100%);
+    }
+    .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: space-around;  
+        width: 30%;
+    }
+    
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    //hamburger menu all tablet
+    .logo{
+        margin-top: 20px;
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: $black;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        left: 4%;
+        top: 0%;
+        transform: translate(-20%, 110%);
+        z-index: 2;
+    }
+    .nav-links{
+        position: fixed;
+        height: 30vh;
+        width: 20%;
+        flex-direction: column;
+            clip-path: circle(10px at 90% -10%);
+            -webkit-clip-path:circle(10px at 90% -10%);   
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path:circle(1000px at 90% -10%); 
+        
+    }
+    .nav-right{
+        display: flex;
+        justify-content: space-around;  
+        width: 30%;
+    }
+}
+
+
+
+@media (min-width:769px) and(max-width:1700px) {
+    // menu hamburger labtop meduim and large
+    .logo{
+        margin-top: 20px;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        width: 20%;
+        height: 10%;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        z-index: 1;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: space-around;  
+        width: 20%;
+        //margin-top: 20px;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        left: 1%;
+        top: 0%;
+        transform: translate(-20%, 110%);
+    }
+}

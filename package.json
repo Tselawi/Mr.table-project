@@ -1,0 +1,23 @@
+{
+  "name": "mr.table-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch public/src_home/scss -o public/src_home/css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tselawi/Mr.table-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tselawi/Mr.table-project/issues"
+  },
+  "homepage": "https://github.com/Tselawi/Mr.table-project#readme",
+  "dependencies": {
+    "node": "^15.8.0",
+    "node-sass": "^5.0.0"
+  }
+}

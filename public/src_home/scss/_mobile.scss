@@ -1,0 +1,350 @@
+@import "variables";
+
+
+@media (min-width:319px) and (max-width:425px){
+    //mobile small medium large
+    .header-container{
+        height: 70vh;
+        width: 130vw;
+        background-color: $b-color;
+    }
+    .number{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 4rem;
+        height: 60%;
+        font-family: $font;
+        margin-left: -20px;
+        color:$gray;
+        overflow: hidden; 
+        //position: absolute;  
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+    .line-v{ 
+        height: 6%;
+        border: 1px solid $gray;
+        //position: relative;
+        //left: 100px;
+        //bottom: 15px;
+        
+    }
+    .title{
+        position: relative;
+        left: 60px;
+        bottom: 45px;
+        width: 10%;
+        height: 10%;
+        font-size: .9rem;
+        color: $gray;
+        //margin-left: 50px;
+    }
+    .headlines{
+        height: 12%;
+        width: 100%;
+        font-size:1.7rem;
+        position: relative;
+        top: 0px;
+        left: 110px;
+    }
+    .pragraph{
+        height: 15%;
+        width: 100%;
+        color: $gray;
+        position: relative;
+        left: 110px;
+        font-size: .7rem;
+    }
+    .container-2{
+        //display: flex;
+        //align-items: flex-start;
+        height: 30%;
+        width: 30%;
+        .image-sofa{
+            position: absolute;
+            bottom: 340px;
+            right: 170px;
+            width: 50%;
+        }
+    }
+    .explore{
+        height: 10%;
+        width: 60%;
+        color: $gray;
+        position: relative;
+        left: 230px;
+        top: 100px;
+        font-size: .7rem;
+        color: #000;
+        text-decoration: none;
+    }
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .part-1{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 190px;
+        position: absolute;
+        left: 0px;   
+    }
+    .rotate-1{
+        color:red;
+        font-size: .8rem;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        transform-origin: 0 0;
+        transform: rotate(270deg)
+    }
+    .bg-1{
+        height: 160px;
+        width: 480px;
+        //margin-left: 70px;
+        background-color: $b-color;
+    }
+    .image-1{
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+        img{
+        width: 350px;
+        }
+        
+    }
+    .text-1{
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: underline;
+        position: absolute;
+        margin-bottom: -50px;
+        margin-left: 70px;
+    }
+    .part-2{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 500px;
+        position: absolute;
+        left: 60px;   
+    }
+    .rotate-2{
+        color:red;
+        font-size: .8rem;
+        position: absolute;
+        bottom: 10px;
+        left: -40px;
+        transform-origin: 0 0;
+        transform: rotate(270deg)
+    }
+    .bg-2{
+        height: 160px;
+        width: 480px;
+        //margin-left: 70px;
+        background-color: $b-color;
+    }
+    .image-2{
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+        img{
+        width: 180px;
+        }
+        
+    }
+    .text-2{
+        font-size: 1.4rem;
+        color: black;
+        //text-decoration: underline;
+        position: absolute;
+        //margin-bottom: -50px;
+        //margin-left: 70px;
+    }
+    .part-3{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 820px;
+        position: absolute;
+        left: 0px;   
+    }
+    .rotate-3{
+        color:$gray;
+        font-size: .8rem;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        transform-origin: 0 0;
+        transform: rotate(270deg)
+    }
+    .bg-3{
+        height: 160px;
+        width: 480px;
+        //margin-left: 70px;
+        background-color: $b-color;
+    }
+    .image-3{
+        position: absolute;
+        bottom: 60px;
+        left: 90px;
+        img{
+        width: 260px;
+        }
+        
+    }
+    .text-3{
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: underline;
+        position: absolute;
+        margin-bottom: -50px;
+        margin-left: 70px;
+    }
+    
+    .part-4{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 1150px;
+        position: absolute;
+        left: 60px;   
+    }
+    .rotate-4{
+        color:red;
+        font-size: .8rem;
+        position: absolute;
+        bottom: 10px;
+        left: -40px;
+        transform-origin: 0 0;
+        transform: rotate(270deg)
+    }
+    .bg-4{
+        height: 160px;
+        width: 480px;
+        //margin-left: 70px;
+        background-color: $b-color;
+    }
+    .image-4{
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+        img{
+        width: 180px;
+        }
+        
+    }
+    .text-4{
+        font-size: 1.4rem;
+        color: black;
+        //text-decoration: underline;
+        position: absolute;
+        //margin-bottom: -50px;
+        //margin-left: 70px;
+    }
+    .part-5{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 1660px;
+        position: absolute;
+        left: 0px;   
+    }
+    .rotate-5{
+        color:$gray;
+        font-size: .8rem;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        transform-origin: 0 0;
+        transform: rotate(270deg)
+    }
+    .bg-5{
+        height: 266px;
+        width: 280px;
+        //margin-left: 70px;
+        background-color: $b-color;
+    }
+    .image-5{
+        position: absolute;
+        bottom: 60px;
+        left: 160px;
+        img{
+        width: 100px;
+        }
+        
+    }
+    .text-5{
+        font-size: 1.4rem;
+        color: black;
+        //text-decoration: underline;
+        position: absolute;
+        margin-bottom: -50px;
+        margin-left: 70px;
+    }
+    .part-6{
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 360px;
+        margin-top: 2110px;
+        position: absolute;
+        left: 60px;   
+    }
+    .hr-line{
+        color: $gray;
+        width: 80px;
+        position: absolute;
+        bottom: 340px;
+        left: 0;
+    }
+    
+    .discount-title{
+        position: absolute;
+        bottom: 250px;
+        left: 0px;
+        width: 340px;
+        font-size: 2rem;
+        span{
+            color: red;
+        }
+    }
+    .discount-text{
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+        width: 250px;
+        color: $gray;
+    }
+    .text-6{
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        color: $gray;
+        .fas{
+            font-size: 1.1rem;
+        }
+    }
+    .line-email{
+        width: 330px;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+    }
+}

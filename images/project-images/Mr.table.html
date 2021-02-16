@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:5500/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linked to css file-->
+    <link rel="stylesheet" href="./Mr.table_files/style.css">
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="./Mr.table_files/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Mr.table</title>
+</head>
+
+<body>
+    <!--Logo-->
+    <header class="logo">
+        <h1>Mr.<br>Table</h1>
+    </header>
+    <!--normal menu-->
+    <nav>
+        <!--hamburger menu-->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5500/#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/#">Shop</a></li>
+                <li><a href="http://127.0.0.1:5500/#">Collection</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="http://127.0.0.1:5500/#"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/#"><i class="fas fa-user"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/#"><i class="fas fa-bookmark"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--header page-->
+    <section class="header-container">
+        <h2 class="number">01</h2>
+        <article class="container-1">
+                <hr class="line-v"><p class="title">SOFA COLLECTION 2016</p>
+            <h1 class="headlines">WOOD CLOTH SOFA</h1>
+                <p class="pragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quo suscipit aperiam id alias tempora veniam provident numquam vero doloribus velit dolore natus accusamus, quas reiciendis obcaecati! Accusamus, totam recusandae.
+                </p>
+            <a class="explore" href="http://127.0.0.1:5500/">EXPLORE NOW <i class="fas fa-chevron-circle-right"></i></a>
+        </article>
+        <article class="container-2">
+            <img class="image-sofa" src="./Mr.table_files/sofa.png" alt="sofa">
+        </article>
+    </section>
+    <section class="main-container">
+        <article class="part-1">
+            <div class="rotate-1"><p>SALE UP TO 30% OFF</p></div>
+            <div class="bg-1"></div>
+            <div class="image-1"><img src="./Mr.table_files/home_couch.png" alt="couch"></div>
+            <p class="text-1">chairs &amp; sofas </p>
+        </article>
+        <article class="part-2">
+            <div class="rotate-2"><p>SALE UP TO 50% OFF</p></div>
+            <div class="bg-2"></div>
+            <div class="image-2"><img src="./Mr.table_files/tv-table.png" alt="tv"></div>
+            <p class="text-2">tv boards</p>
+        </article>
+        <article class="part-3">
+            <div class="rotate-3">MOST WANTED</div>
+            <div class="bg-3"></div>
+            <div class="image-3"><img src="./Mr.table_files/table-trending.png" alt="trending"></div>
+            <p class="text-3">table trending</p>
+        </article>
+        <article class="part-4">
+            <div class="rotate-4"><p>SALE UP TO 50% OFF</p></div>
+            <div class="bg-4"></div>
+            <div class="image-4"><img src="./Mr.table_files/wood-decor.png" alt="decors"></div>
+            <p class="text-4">wood decors</p>
+        </article>
+        <article class="part-5">
+            <div class="rotate-5"><p>AVAILABLE ON STORE</p></div>
+            <div class="bg-5"></div>
+            <div class="image-5"><img src="./Mr.table_files/lamp-table.png" alt="lamp"></div>
+            <p class="text-5">light collections</p>
+        </article>
+        <article class="part-6">
+            <div class="hr-line"><hr></div>
+            <div class="discount-title"><p>get <span>10%</span> discount</p></div>
+            <div class="discount-text"><p>Get 10% discount with notified about the latest news and updates. no spam, we promise !</p></div>
+            <p class="text-6">Enter you email address <i class="fas fa-arrow-circle-right"></i></p>
+            <hr class="line-email">
+        </article>
+        
+    </section>
+    <footer class="footer">
+
+    </footer>
+    <!--JavaScript-->
+    <script src="./Mr.table_files/app.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

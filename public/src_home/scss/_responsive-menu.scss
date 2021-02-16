@@ -1,10 +1,18 @@
 @import "variables";
 
 
-@media (min-width:100px) and (max-width:424px){
+@media (min-width:100px) and (max-width:425px){
     //hamburger menu for mobile small medium large
+    
     .logo{
-        margin-top: 20px;
+        //margin-top: 20px;
+        background-color: $b-color;
+        width:130vw;
+        height: 15vh;
+        //position:absolute;
+        //left: -70px;
+        //top: -20px;
+        
     }
     .line{
         width: 30px;
@@ -13,26 +21,40 @@
         margin: 5px;
     }
     nav{
+        height: 15vh;
         position: relative;
     }
     .hamburger{
         position: absolute;
         cursor: pointer;
         left: 7%;
-        top: 110%;
+        top: 50%;
         transform: translate(-20%, -100%);
+        z-index: 2;
     }
     .nav-links{
         position: fixed;
-        height: 100vh;
-        width: 100%;
+        height: 30vh;
+        width: 20%;
         flex-direction: column;
-        display: none;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        //display: none;
+            clip-path: circle(10px at 90% -10%);
+            -webkit-clip-path:circle(10px at 90% -10%); 
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path:circle(1000px at 90% -10%);   
     }
     .nav-right{
         display: flex;
-        justify-content: space-around;  
+        justify-content: space-around;
         width: 30%;
+        position: relative;
+        left: 80px;
+        top: 60px;
     }
     
 }
@@ -40,7 +62,10 @@
 @media (min-width: 426px) and (max-width: 768px){
     //hamburger menu all tablet
     .logo{
-        margin-top: 20px;
+        //margin-top: 20px;
+        background-color: $b-color;
+        //width:130vw;
+        height: 11vh;
     }
     .line{
         width: 30px;
@@ -57,20 +82,21 @@
         left: 4%;
         top: 0%;
         transform: translate(-20%, 110%);
-        z-index: 2;
+        
     }
     .nav-links{
         position: fixed;
         height: 30vh;
         width: 20%;
+        //display: none;
         flex-direction: column;
+        position: absolute;
             clip-path: circle(10px at 90% -10%);
             -webkit-clip-path:circle(10px at 90% -10%);   
     }
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path:circle(1000px at 90% -10%); 
-        
+        -webkit-clip-path:circle(1000px at 90% -10%);   
     }
     .nav-right{
         display: flex;
@@ -84,7 +110,9 @@
 @media (min-width:769px) and(max-width:1700px) {
     // menu hamburger labtop meduim and large
     .logo{
-        margin-top: 20px;
+        //margin-top: 20px;
+        background-color: $b-color;
+        height: 11vh;
     }
     .nav-links{
         display: flex;

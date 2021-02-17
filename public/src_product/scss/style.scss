@@ -1,0 +1,473 @@
+@import"variables.scss";
+@import"mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+
+*{
+    background-color: $first-bckg;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+.container{
+//    border: solid 1px rgb(201, 201, 211);
+box-shadow: -5px -1px 18px 42px rgba(224,224,224,0.82);
+   @include container-spacing;
+   @include border-radius;
+    .banner{
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        @include border-radius;
+    }
+}
+
+.banner{
+    background-color: white;
+    height: 20px;
+}
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 10% 10% 10%;
+    
+}
+.article{
+    margin-left: 30px;
+}
+.description{
+    margin-left: 50px;
+
+}
+.shades{
+    height: 20px;
+    width: 180px;
+    display: flex;
+}
+.firstshade{
+    width: 60px;
+    background-color:$shade-one;
+    height: 20px;
+    margin-right: 10px;
+    p{
+        justify-content: center;
+        display: flex;
+        margin-top: 25px;
+
+    }
+}
+.sectshade{
+    width: 60px;
+    background-color:$shade-two;
+    height: 20px;
+    margin-right: 10px;
+
+}
+.thirdtshade{
+    width: 60px;
+    background-color: $shade-three;
+    height: 20px;
+
+}
+.shades-container{
+    display: flex;
+}
+
+.price{
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: 30px;
+    width: 120px;
+    background-color: $button;
+    margin-top: 40px;
+    color: white;
+}
+.product-info{
+    display: flex;
+    //justify-content: space-between;
+    margin: 10% 10% 10% 10%;
+    //width: 90%;
+}
+.secondiv{
+    margin-left: 3rem;
+}
+.thirdiv{
+    margin-left: 20Opx;
+    padding-left: 200px;
+}
+.more-products{
+    margin: 10% 10% 10% 10%;
+   
+}
+.pictures{
+    justify-content: space-around;
+    align-items : center;
+    display: flex;
+    margin-top: 25px;
+}
+.first-picture{
+    width: 30%;
+    .stools{
+        width:100%;
+    }
+    transition: all .180s ease-in-out; 
+    :hover { transform: scale(1.1); }
+}
+
+.sec-picture{
+    width: 30%;
+    .stools{
+        width:100%;
+    }
+    transition: all .180s ease-in-out; 
+    :hover { transform: scale(1.1); }
+    
+}
+.third-picture{
+    width: 30%;
+    .stools{
+        width:100%;
+    }
+    transition: all .180s ease-in-out; 
+    :hover { transform: scale(1.1); }
+    
+}
+.sign-up{
+    display: flex;
+    justify-content: center;
+}
+
+
+.input{
+//width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  //border: none;
+//  background: #f1f1f1;
+  justify-content: center;
+  display: flex;
+}
+.sec-container{
+    //border: black solid 2px;
+box-shadow: -5px -1px 18px 42px rgba(224,224,224,0.82);
+@include border-radius;
+    @include container-spacing;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.banner .dot{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+h3{
+    @include font;
+}
+h2{
+    @include font;
+}
+img{
+    @include br-pictures;
+}
+.article{
+    p{    
+        padding-bottom: 20px;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+}
+
+p{
+@include Montserrat;
+}
+.product-info{
+    h3{
+        @include padding-bottom;
+    }
+    h4{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+.more-products{
+    h3{
+        padding-bottom: 20px;
+    }
+    .subtitles{
+        padding-left: 35px;
+    }
+}
+p{
+    text-align: justify;
+}
+.firstdiv{
+    @include Montserrat; 
+}
+//menu nav
+// nav-bar
+// change the variables colors ....!!!!!!
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 10vh;
+    position:absolute;
+    margin-top: 20px;
+    }
+    nav{
+    height: 10vh;
+    }
+    .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    z-index: 1;
+    li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    }
+    
+    }
+    .nav-links{
+    clip-path: circle(1000px at 110% -10%);
+    -webkit-clip-path:circle(1000px at 110% -10%);
+    
+    }
+    .nav-links.open{
+    flex-direction: column;
+    height: 30vh;
+    width: 15vw;
+    clip-path: circle(1000px at 90% 10%);
+    -webkit-clip-path:circle(1000px at 90% 10%);
+    
+    }
+    .nav-right{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 15%;
+    height: 20%;
+    float: right;
+    top: 35px;
+    position: relative;
+    margin-left: auto;
+    li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    }
+    }
+    .line{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    }
+    nav{
+    position: relative;
+    }
+    .hamburger{
+    position: absolute;
+    cursor: pointer;
+    left: 1%;
+    top:0;
+    transform: translate(-20%, 110%);
+    }
+
+//animation
+.anim:after {
+    display      : block;
+    content      : '';
+    border-bottom: solid 5px #ffffff;
+    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+    background-size: 300% 300%;
+    transform    : scaleX(0);
+    transition   : transform 300ms ease-in-out;
+}
+
+.anim:hover:after {
+    transform: scaleX(1);
+}
+.nw{
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-top: 50px;
+
+}
+.furniture{
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.anim .authentic{
+    width: 60%;
+}
+//footer
+hr {
+    border-width: 1.5px;
+    border-color: rgba(245, 245, 245, 0.4);
+    width:95%;
+}
+footer{
+    margin-top: 100px;
+    width:100%;
+    height: 20px;
+    font-size: 1.5rem;
+    .flex-grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        text-align: left;
+        color: black;   
+        margin-left: 2rem;
+        margin-right: 2rem; 
+        }
+    div{
+        text-align: center;
+        margin:1rem;
+        width:100%;
+        :hover{
+            color:gray;
+        }      
+    }
+    .flex-grid{
+        flex-direction: row;       
+        i{
+            font-size: 1.5rem; 
+        }
+    }
+    }
+    .fa-wifi{
+        rotate: 45deg;
+    }
+    .lastline{
+        font-size:0.8rem;
+        margin: 2rem;
+        text-align: center;
+    } 
+    .item{
+        :hover{
+            color:gray;
+        }
+        
+    }
+}           
+
+
+
+//RESPONSIVE FOOTER!!!
+@media (min-width:100px) and (max-width:424px){
+    // FOOTER for mobile small medium large
+    footer{
+        font-size: 1.2rem;
+        width:100%;
+        .flex-grid{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        h1{
+        margin-left: 53%;
+        margin-right: 47%;
+        }
+        .col{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        i{
+            font-size: 1.8rem;
+            margin:1rem ;
+        }
+        }
+        }
+    }        
+    
+}
+
+
+@media (min-width: 425px) and (max-width: 769px){
+    //FOOTER all tablet
+    footer{
+        font-size: 1.2rem;
+        .flex-grid{
+            .block{
+        display:flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+            }
+            h1{
+                margin-left: 53%;
+                margin-right: 47%;
+                }
+            i{
+                font-size: 1.8rem;
+                margin:1rem ;
+            }    
+        }        
+    }   
+}
+
+
+
+
+@media (min-width:770px) {
+    //FOOTER menu hamburger labtop meduim and large
+    footer{
+        font-size: 1rem;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        .flex-grid{
+        width:40%;
+        }
+        div{
+            display:flex;
+            flex-direction: row;
+                .right{
+                    width:200%;
+                }
+            }
+            .item{
+                margin-left: -10%;
+                margin-right: -12%;
+                
+            }
+    .lastline{
+        justify-content: center;
+        width: 100%;
+    } 
+}
+}

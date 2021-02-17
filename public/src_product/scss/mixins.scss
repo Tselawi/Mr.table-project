@@ -1,0 +1,27 @@
+@mixin container-spacing () {
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-right: 5%;   
+  }
+
+  @mixin font () {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: black;
+}
+@mixin border-radius{
+  border-radius: 20px;
+}
+@mixin br-pictures {
+  border-radius: 5px;
+}
+@mixin padding-spacing {
+  padding-bottom: 20px;  
+}
+@mixin Montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin padding-bottom{
+  padding-bottom: 20px;
+}

@@ -226,82 +226,8 @@ p{
 //menu nav
 // nav-bar
 // change the variables colors ....!!!!!!
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 10vh;
-    position:absolute;
-    margin-top: 20px;
-    }
-    nav{
-    height: 10vh;
-    }
-    .nav-links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    width: 20%;
-    height: 10%;
-    position: absolute;
-    top: 45px;
-    left: 50px;
-    z-index: 1;
-    li a{
-    text-decoration: none;
-    color:black;
-    font-size: 18px;
-    }
-    
-    }
-    .nav-links{
-    clip-path: circle(1000px at 110% -10%);
-    -webkit-clip-path:circle(1000px at 110% -10%);
-    
-    }
-    .nav-links.open{
-    flex-direction: column;
-    height: 30vh;
-    width: 15vw;
-    clip-path: circle(1000px at 90% 10%);
-    -webkit-clip-path:circle(1000px at 90% 10%);
-    
-    }
-    .nav-right{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 15%;
-    height: 20%;
-    float: right;
-    top: 35px;
-    position: relative;
-    margin-left: auto;
-    li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    }
-    }
-    .line{
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    }
-    nav{
-    position: relative;
-    }
-    .hamburger{
-    position: absolute;
-    cursor: pointer;
-    left: 1%;
-    top:0;
-    transform: translate(-20%, 110%);
-    }
 
+   
 //animation
 .anim:after {
     display      : block;
@@ -556,12 +482,11 @@ footer{
 @media only screen and (min-width: 901px) {
 
 .article{
-    margin-bottom: 150px;
+    margin-bottom: 251px;
 }
     .thirdiv{
         margin-left: 250px;
     }
-
 }
 
 

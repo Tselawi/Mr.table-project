@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap");
@@ -134,11 +135,6 @@ body {
 
 .secondiv {
   margin-left: 3rem;
-}
-
-.thirdiv {
-  margin-left: 20Opx;
-  padding-left: 200px;
 }
 
 .more-products {
@@ -612,6 +608,94 @@ footer .item :hover {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 98%;
+  }
+  .first-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img-chair {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .article p  {
+    margin-right: 220px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .first-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article p {
+    padding-top: 10px;
+  }
+  .product-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondiv {
+    margin-left: 15rem;
+    margin-top: -188px;
+  }
+  .thirdiv {
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .first-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article p {
+    margin-top: 20px;
+  }
+  .article .subtitle {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .article h2 {
+    margin-left: 50px;
+  }
+  .shades-container {
+    margin-left: 50px;
+  }
+  .button {
+    margin-left: 50px;
+  }
+  .thirdiv {
+    margin-left: 150px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .article {
+    margin-bottom: 150px;
+  }
+  .thirdiv {
+    margin-left: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

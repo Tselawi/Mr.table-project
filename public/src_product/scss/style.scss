@@ -104,8 +104,8 @@ box-shadow: -5px -1px 18px 42px rgba(224,224,224,0.82);
     margin-left: 3rem;
 }
 .thirdiv{
-    margin-left: 20Opx;
-    padding-left: 200px;
+    //margin-left: 20Opx;
+   // padding-left: 200px;
 }
 .more-products{
     margin: 10% 10% 10% 10%;
@@ -471,3 +471,98 @@ footer{
     } 
 }
 }
+
+//Media queries Product
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 98%;}
+
+    .first-section{
+            display: flex;
+    flex-direction: column;
+        }
+        
+ .img-chair{
+ width: 100%;}
+ 
+ img{
+ width:100%;}
+
+.article p {
+ margin-right: 220px;
+     width: 100%;
+     margin-top: 20px;
+    }
+.thirdiv{
+   // padding-left: 50px;
+}  
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+.first-section{
+    flex-direction: column;
+}
+.thirdiv{
+   // padding-left: 100px;
+}  
+
+.article p{
+    padding-top: 10px;
+
+}
+.product-info{
+    flex-direction: column;
+}
+.secondiv{
+    margin-left: 15rem;
+    margin-top: -188px;
+}
+.thirdiv{
+    margin-top: 140px;
+}
+}
+
+@media (min-width:769px) and (max-width:900px) {
+
+    .first-section{
+        flex-direction: column;
+    }
+    .article p{
+        margin-top: 20px;
+//        margin-left: 50px;
+    }
+    .article .subtitle{
+        margin-top: 20px;
+        margin-left: 50px;  
+    }
+    .article h2{
+        margin-left: 50px;   
+    }
+    .shades-container{
+        margin-left: 50px;    
+    }
+    .button{
+        margin-left: 50px;
+    }
+    .thirdiv{
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+
+.article{
+    margin-bottom: 150px;
+}
+    .thirdiv{
+        margin-left: 250px;
+    }
+
+}
+
+
+

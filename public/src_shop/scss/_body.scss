@@ -1,0 +1,280 @@
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    overflow-y:scroll; 
+    position:relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    p{
+        color: rgb(107, 106, 106);
+    }
+}
+
+.first{
+    .flex-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        img{
+            margin:0px;
+            width: 36rem;
+        }
+    }
+}
+
+.second{
+    margin-top:3%;
+    .flex-grid{
+        display: flex;
+        justify-content:center;        
+        
+        .block{
+            text-align: left;
+            width:90%;
+            margin:1rem;
+            i{
+                font-size:3rem;
+                margin-top:1rem;
+                margin-bottom:1rem;
+            }
+        }
+        .top{
+            text-align: center;
+            width:90%;
+            margin:4rem;
+            }
+    }
+}
+.third{
+    .flex-grid{
+        display: flex;
+        justify-content:center;
+        margin-top:3rem;
+        margin-bottom:3rem;
+        img{
+            margin:0px;
+            width: 27rem;
+            }
+        }
+        .block{
+            width:28rem;
+            margin:1rem;
+            li{
+                margin:1rem;
+                color: rgb(107, 106, 106);
+                i{
+                    color:black;
+                }
+            }
+        }
+}
+
+.fourth{
+    .flex-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center; 
+        align-items: center; 
+        .block{
+        margin:2rem;
+        }  
+        img{
+            width: 28rem;
+        }
+}
+}
+.fifth{
+    background-color: rgb(230, 227, 227);
+    .flex-grid{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 2rem;
+            width:7rem;
+            opacity:50%;
+            filter: grayscale(0%);
+        }
+    }
+}
+
+
+@media (min-width:100px) and (max-width:424px){
+    // for mobile small medium large
+    .first{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            img{
+                margin-top:-2px;
+                margin-bottom: -2px;
+                width: 100%;
+            }
+        }
+    }
+    .second{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content:center; 
+            align-items: center;       
+            .block {
+            text-align: center;
+            width:90%;
+            i{
+                font-size:3rem;
+                margin-top:1rem;
+                margin-bottom:1rem;
+            }
+        }
+    }
+    }
+    .third{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            margin-top:3rem;
+            margin-bottom:3rem;
+            img{
+                margin:0px;
+                width: 100%;
+                }
+            }
+            .block{
+                width:100%;
+                margin:1rem;
+                li{
+                    color: rgb(107, 106, 106);
+                    i{
+                        color:black;
+                    }
+                }
+            }
+    }
+    .fourth{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content:center; 
+            .block{
+                margin:0rem;
+            img{
+                width:100%;
+            }
+            p{
+                margin-top:1rem;
+                margin-bottom:2rem;
+            }
+            }  
+        }
+    }
+    .fifth{
+        background-color: rgb(240, 240, 240);
+        .flex-grid{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 2rem;
+                width:30%;
+                opacity:50%;
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 769px){
+     // all tablet
+    .first{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            img{
+                margin-top:-2px;
+                margin-bottom: -2px;
+                width: 100%;
+            }
+        }
+    }
+    .second{
+        .flex-grid{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center; 
+            align-items: center; 
+            .block{
+                margin:1rem;
+                text-align: center;
+            }
+            .top,.b2{
+                width:80%;
+            } 
+            .b1{
+                width:40%;
+            }
+    }
+    }
+    .third{
+        .flex-grid{
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top:1rem;
+            margin-bottom:1rem ;
+            img{
+                margin:1%;
+                width: 45%;
+                    
+                }
+            .block{
+                width:100%;
+            }
+            .list{
+                width:45%;
+                margin-left:-0.5rem;
+                margin-right:-0.5rem;
+                margin-top: -0.5rem;
+            }
+            }
+    }
+    .fourth{
+        .flex-grid{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:center; 
+            align-items: center; 
+            .block{
+            img{
+                width:100%;
+            }
+            p{
+                margin-top:1rem;
+                margin-bottom:2rem;
+            }
+            }  
+        }
+    }
+    .fifth{
+        background-color: rgb(240, 240, 240);
+        .flex-grid{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:35%;
+                margin:5%;
+            }
+        }
+    }
+}
